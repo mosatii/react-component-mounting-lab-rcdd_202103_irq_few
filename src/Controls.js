@@ -18,4 +18,4 @@ class Controls extends PureComponent {
 
 }
 
-export default 
+export default Controls

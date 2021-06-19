@@ -26,11 +26,22 @@ button {
   height: 100px;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  height: 200px;
+  width: 100vw;
+  text-align: center;
+  z-index: 1;
+  background: white;
+}
+
 .TimerGrid {
+  position: relative;
+  top: 200px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .Timer {
@@ -84,20 +95,20 @@ q {
   cursor: pointer;
 }
 
-.mountText {
-  font-size: 200%;
-  animation-name: animateMount;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-.hidden {
-  opacity: 0;
-}
 
 @keyframes animateMount {
     from {opacity: 1;}
     to {opacity: 0;}
+}
+
+.logText {
+
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
 }
 
 form {
